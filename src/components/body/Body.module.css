@@ -1,0 +1,107 @@
+.body {
+  width: 100%;
+  height: 55vh;
+  display: flex;
+}
+.leftBody {
+  width: 60%;
+  background-color: rgb(231, 214, 214);
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.ul {
+  list-style-type: none;
+  display: flex;
+  margin: 10px;
+}
+
+.keydown {
+  font-size: small;
+}
+.gofood {
+  padding: 5px;
+  margin: 5px;
+  font-size: large;
+  margin-left: 5%;
+}
+
+.rightBody {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(19, 98, 19);
+}
+
+.connect {
+  padding: 10px;
+  margin: 10px;
+  font-size: x-small;
+  margin-left: 5%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: white;
+}
+.ul div {
+  margin: 5px;
+}
+
+.shop {
+  font-weight: 700;
+  margin-top: 5px;
+  padding: 5px;
+}
+.oraganic {
+  font-weight: 600;
+  font-size: 22px;
+  margin: 5px;
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+}
+.category div {
+  background-color: antiquewhite;
+  margin: 2px;
+  padding: 10px;
+  font-size: smaller;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.category div:hover {
+  background-color: rgb(25, 101, 25);
+  color: white;
+}
+
+@media only screen and (max-width: 900px) {
+  .gofood {
+    width: 5%;
+  }
+  .ul li {
+    font-size: xx-small;
+  }
+  .connect {
+    padding: 5px;
+    margin: 5px;
+    font-size: xx-small;
+    margin-left: 2%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+  }
+  .ul div {
+    margin: 5px;
+    font-size: 10px;
+  }
+  .ul {
+    display: none;
+  }
+  .category div {
+    font-size: 10px;
+    padding: 5px;
+  }
+}
