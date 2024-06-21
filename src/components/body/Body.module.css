@@ -73,6 +73,12 @@
 }
 .category div:hover {
   background-color: rgb(25, 101, 25);
+}
+.link {
+  text-decoration: none;
+  color: black;
+}
+.link:hover {
   color: white;
 }
 

@@ -6,6 +6,12 @@ import SearchIcon from "@mui/icons-material/Search";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import LocalMallIcon from "@mui/icons-material/LocalMall";
+import { Link, Route, Routes } from "react-router-dom";
+import FruitsVegitables from "./Shopping/FruitsVegitables";
+import Bakery from "./Shopping/Bakery";
+import Beverage from "./Shopping/Beverage";
+import BiscutsSnacks from "./Shopping/BiscutsSnacks";
+import MeatSeaFood from "./Shopping/MeatSeaFood";
 
 const Body = () => {
   return (
@@ -82,12 +88,32 @@ const Body = () => {
         <div className={classes.shop}>Shop by Category</div>
         <div className={classes.oraganic}>Top Category Of Organic Food</div>
         <div className={classes.category}>
-          <div>Fruits and Vegitables</div>
-          <div>Bakery</div>
-          <div>Meat and Seafood</div>
-          <div>Beverage</div>
-          <div>Biscuit and Snacks</div>
+          <Link to="/MeatChicken" className={classes.link}>
+            <div>Meat and Chicken</div>
+          </Link>
+
+          <Link to="/Bakery" className={classes.link}>
+            <div>Bakery</div>
+          </Link>
+
+          <Link to="/FishSeaFoods" className={classes.link}>
+            <div>Fish and Seafood</div>
+          </Link>
+          <Link to="/Beverage" className={classes.link}>
+            <div>Beverage</div>
+          </Link>
+          <Link to="/BiscuitSnack" className={classes.link}>
+            <div>Biscuit and Snacks</div>
+          </Link>
         </div>
+        <Routes>
+          <Route path="/MeatChicken" element={<FruitsVegitables />}></Route>
+          <Route path="/" element={<FruitsVegitables />}></Route>
+          <Route path="/Bakery" element={<Bakery />}></Route>
+          <Route path="/FishSeaFoods" element={<MeatSeaFood />}></Route>
+          <Route path="/Beverage" element={<Beverage />}></Route>
+          <Route path="/BiscuitSnack" element={<BiscutsSnacks />}></Route>
+        </Routes>
       </div>
     </div>
   );
