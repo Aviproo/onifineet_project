@@ -1,6 +1,6 @@
 .body {
   width: 100%;
-  height: 55vh;
+  height: auto;
   display: flex;
 }
 .leftBody {
@@ -9,6 +9,19 @@
   display: flex;
 
   justify-content: space-between;
+}
+.mid {
+  padding-top: 4%;
+  padding-left: 4%;
+  height: 50vh;
+  background: linear-gradient(
+    90deg,
+    rgb(231, 214, 214) 60%,
+    rgb(19, 98, 19) 40%
+  );
+}
+.calImage {
+  background-color: green;
 }
 
 .ul {
@@ -74,12 +87,23 @@
 .category div:hover {
   background-color: rgb(25, 101, 25);
 }
+.imageFile {
+  width: 300px;
+  height: auto;
+  position: absolute;
+  top: 5%;
+  right: 20%;
+}
 .link {
   text-decoration: none;
   color: black;
 }
 .link:hover {
   color: white;
+}
+.menu {
+  display: none;
+  margin-top: 10px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -109,5 +133,29 @@
   .category div {
     font-size: 10px;
     padding: 5px;
+  }
+  .imageFile {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 8%;
+    right: 22%;
+  }
+  .gofood {
+    width: 50%;
+  }
+  .menu {
+    display: unset;
+    margin-top: 10px;
+  }
+  .mid {
+    padding-top: 5%;
+    padding-left: 5%;
+    height: 20vh;
+    background: linear-gradient(
+      90deg,
+      rgb(231, 214, 214) 60%,
+      rgb(19, 98, 19) 40%
+    );
   }
 }

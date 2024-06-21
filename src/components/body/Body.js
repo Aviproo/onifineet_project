@@ -12,78 +12,99 @@ import Bakery from "./Shopping/Bakery";
 import Beverage from "./Shopping/Beverage";
 import BiscutsSnacks from "./Shopping/BiscutsSnacks";
 import MeatSeaFood from "./Shopping/MeatSeaFood";
+import image from "../../PngFile/Lowcalorie.png";
+import MenuIcon from "@mui/icons-material/Menu";
+import MidBody from "./Shopping/MidBody";
 
 const Body = () => {
   return (
     <div>
-      <div className={classes.body}>
-        <div className={classes.leftBody}>
-          <div className={classes.gofood}>
-            GO <b>Food</b>
+      <div>
+        <div className={classes.body}>
+          <div className={classes.leftBody}>
+            <div className={classes.gofood}>
+              GO <b>Food</b>
+            </div>
+
+            <div>
+              <ul className={classes.ul}>
+                <li>
+                  Home <KeyboardArrowDownIcon style={{ fontSize: "small" }} />
+                </li>
+                <li>
+                  Groceries
+                  <KeyboardArrowDownIcon style={{ fontSize: "small" }} />
+                </li>
+                <li>
+                  Pages <KeyboardArrowDownIcon style={{ fontSize: "small" }} />
+                </li>
+              </ul>
+            </div>
+            <div className={classes.menu}>
+              <MenuIcon />
+            </div>
           </div>
-          <div>
-            <ul className={classes.ul}>
-              <li>
-                Home <KeyboardArrowDownIcon style={{ fontSize: "small" }} />
-              </li>
-              <li>
-                Groceries{" "}
-                <KeyboardArrowDownIcon style={{ fontSize: "small" }} />
-              </li>
-              <li>
-                Pages <KeyboardArrowDownIcon style={{ fontSize: "small" }} />
-              </li>
-            </ul>
+          <div className={classes.rightBody}>
+            <div className={classes.connect}>
+              Connect with us <EastIcon style={{ fontSize: "small" }} />
+            </div>
+            <div className={classes.ul}>
+              <div>
+                <SearchIcon
+                  style={{
+                    fontSize: "small",
+                    borderRadius: "100px",
+                    background: "gray",
+                    padding: "5px",
+                  }}
+                />
+              </div>
+              <div>
+                <PersonOutlineIcon
+                  style={{
+                    fontSize: "small",
+                    borderRadius: "100px",
+                    background: "gray",
+                    padding: "5px",
+                  }}
+                />
+              </div>
+              <div>
+                <FavoriteBorderIcon
+                  style={{
+                    fontSize: "small",
+                    borderRadius: "100px",
+                    background: "gray",
+                    padding: "5px",
+                  }}
+                />
+              </div>
+              <div>
+                <LocalMallIcon
+                  style={{
+                    fontSize: "small",
+                    borderRadius: "100px",
+                    background: "gray",
+                    padding: "5px",
+                  }}
+                />
+              </div>
+            </div>
+            <div className={classes.menu}>
+              <MenuIcon />
+            </div>
           </div>
         </div>
-        <div className={classes.rightBody}>
-          <div className={classes.connect}>
-            Connect with us <EastIcon style={{ fontSize: "small" }} />
+        <div className={classes.secondDiv}>
+          <div className={classes.mid}>
+            <MidBody />
           </div>
-          <div className={classes.ul}>
-            <div>
-              <SearchIcon
-                style={{
-                  fontSize: "small",
-                  borderRadius: "100px",
-                  background: "gray",
-                  padding: "5px",
-                }}
-              />
-            </div>
-            <div>
-              <PersonOutlineIcon
-                style={{
-                  fontSize: "small",
-                  borderRadius: "100px",
-                  background: "gray",
-                  padding: "5px",
-                }}
-              />
-            </div>
-            <div>
-              <FavoriteBorderIcon
-                style={{
-                  fontSize: "small",
-                  borderRadius: "100px",
-                  background: "gray",
-                  padding: "5px",
-                }}
-              />
-            </div>
-            <div>
-              <LocalMallIcon
-                style={{
-                  fontSize: "small",
-                  borderRadius: "100px",
-                  background: "gray",
-                  padding: "5px",
-                }}
-              />
-            </div>
+          <div className={classes.calImage}>
+            <img src={image} className={classes.imageFile} />
           </div>
         </div>
       </div>
+
       <div>
         <div className={classes.shop}>Shop by Category</div>
         <div className={classes.oraganic}>Top Category Of Organic Food</div>
