@@ -113,8 +113,8 @@ const Body = () => {
             <div>Meat and Chicken</div>
           </Link>
 
-          <Link to="/Bakery" className={classes.link}>
-            <div>Bakery</div>
+          <Link to="/Shoping" className={classes.link}>
+            <div>Shoping</div>
           </Link>
 
           <Link to="/FishSeaFoods" className={classes.link}>
@@ -130,7 +130,7 @@ const Body = () => {
         <Routes>
           <Route path="/MeatChicken" element={<FruitsVegitables />}></Route>
           <Route path="/" element={<FruitsVegitables />}></Route>
-          <Route path="/Bakery" element={<Bakery />}></Route>
+          <Route path="/Shoping" element={<Bakery />}></Route>
           <Route path="/FishSeaFoods" element={<MeatSeaFood />}></Route>
           <Route path="/Beverage" element={<Beverage />}></Route>
           <Route path="/BiscuitSnack" element={<BiscutsSnacks />}></Route>

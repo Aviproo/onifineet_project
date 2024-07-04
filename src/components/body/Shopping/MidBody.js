@@ -1,6 +1,5 @@
 import React from "react";
 import slice from "../../../PngFile/file.png";
-import EastIcon from "@mui/icons-material/East";
 import AddIcon from "@mui/icons-material/Add";
 import classes from "./MidBody.module.css";
 
@@ -19,11 +18,6 @@ const MidBody = () => {
         <br /> You should try and feel your own it will be great and Delecious!!
       </div>
       <div className={classes.addition}>
-        <div className={classes.shopNow}>
-          <span className={classes.shopA}>SHOP NOW</span>
-          <EastIcon style={{ marginLeft: "5px" }} className={classes.east} />
-        </div>
-
         <div className={classes.Plus}>
           <div className={classes.shop}>
             35k
